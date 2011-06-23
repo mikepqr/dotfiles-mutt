@@ -1,0 +1,89 @@
+source ~/.mutt/imap-physics
+source ~/.mutt/ibook
+set realname="Michael Williams"
+set from="williams@astro.ox.ac.uk"
+set hostname="astro.ox.ac.uk"
+set use_from
+set use_domain
+set reverse_name
+unset reverse_realname
+
+source ~/.mutt_aliases
+set alias_file=~/.mutt/aliases
+source ~/.mutt/fcc-hooks
+source ~/.mutt/save-hooks
+source ~/.mutt/folder-hooks
+source ~/.mutt/macros
+source ~/.mutt/mailboxes
+source ~/.mutt/colors
+source ~/.mutt/crypto
+
+unset confirmappend
+
+## don't mark messages as old if i haven't read them
+unset mark_old
+## i don't like the annoying + markers at the beginning of wrapped lines
+unset markers
+## show message index while reading messages
+set pager_index_lines=5
+
+# Fix backspace in Terminal.app
+bind editor <delete> backspace
+
+# Edit headers, use vim, and jump to the top of the email to start editing.
+set edit_headers
+set editor="vim +'/^$/+1' -c 'nohlsearch'"
+
+# Don't display certain headers
+ignore *
+unignore From To Cc Subject Date Reply-To Organization X-Mailer User-Agent
+
+# Order to display the headers in
+hdr_order From: Subject: Date: To: Cc
+
+# Automatically quote message
+set include=yes
+
+# subject in forwarded messages
+set forward_format="Fwd: %s"
+
+set mime_forward=ask-yes
+
+# Don't ask to move read messages to mbox on exit
+set move=no
+
+# Fill out messages with '~'.
+set tilde
+
+# Use aspell
+set ispell="aspell -e -c"
+
+# Set pager context
+set pager_context=4
+
+# Apply to all tagged messages
+set auto_tag
+
+# Save my temporary files in my home directory
+set tmpdir=~/.mutt/tmp
+
+# Don't display "L" for list emails
+set to_chars=" +TCF "
+
+# Don't be "clever" and display mailing list emails as "To <list>". Tell me who it's from!
+set index_format="%4C %Z %{%b %d} %-15.15F (%?l?%4l&%4c?) %s"
+
+# Cache headers
+set header_cache=~/.mutt/hcache/
+# Cache bodies
+set message_cachedir=~/.mutt/bcache
+
+# Use signature for new mails but not replies
+macro index m ':set signature=~/.signature'<enter><mail> 'compose a new message'
+macro pager m ':set signature=~/.signature'<enter><mail> 'compose a new message'
+reply-hook ~A "set signature=''"
+
+# Save to Drafts by default
+set postpone=ask-yes
+# Do not reopen postponed messages by default
+set recall=ask-no

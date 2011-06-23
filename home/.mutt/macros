@@ -1,0 +1,3 @@
+macro index "\Cb"    "<pipe-message>urlview<enter>"
+macro pager "\Cb"    "<pipe-message>urlview<enter>"
+macro compose y <ispell><send-message> "spell-check and send"

@@ -1,0 +1,2 @@
+folder-hook . set sort=date
+folder-hook lists set sort=threads

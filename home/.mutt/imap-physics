@@ -1,0 +1,8 @@
+set spoolfile=imaps://mail.physics.ox.ac.uk:993/INBOX
+set folder=imaps://mail.physics.ox.ac.uk:993/
+set postponed="imaps://mail.physics.ox.ac.uk:993/Drafts"
+set record="imaps://mail.physics.ox.ac.uk:993/Sent\ Items"
+set imap_user="WilliamsMi@physics.ox.ac.uk"
+set mail_check=180
+set timeout=60
+set mask="!Contacts|Calendar|Deleted\ Items|Public.*|Journal|Junk.*|Outbox|Notes|Tasks|Trash"
