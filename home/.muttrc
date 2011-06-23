@@ -8,7 +8,7 @@ set use_domain
 set reverse_name
 unset reverse_realname
 
-source ~/.mutt_aliases
+source ~/.private/.mutt_aliases
 set alias_file=~/.mutt/aliases
 source ~/.mutt/fcc-hooks
 source ~/.mutt/save-hooks
