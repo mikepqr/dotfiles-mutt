@@ -15,7 +15,7 @@ source ~/.mutt/save-hooks
 source ~/.mutt/folder-hooks
 source ~/.mutt/macros
 source ~/.mutt/mailboxes
-source ~/.mutt/colors
+source ~/.mutt/mutt-colors-solarized-dark-16.muttrc
 source ~/.mutt/crypto
 
 unset confirmappend
