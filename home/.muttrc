@@ -64,9 +64,6 @@ set pager_context=4
 # Apply to all tagged messages
 set auto_tag
 
-# Save my temporary files in my home directory
-set tmpdir=~/.mutt/tmp
-
 # Don't display "L" for list emails
 set to_chars=" +TCF "
 
