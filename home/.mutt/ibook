@@ -1,9 +1,0 @@
-set smtp_url="smtp://WilliamsMi@physics.ox.ac.uk@mail.physics.ox.ac.uk:587"
-set smtp_authenticators="login"
-
-# Use Mac OS X mailcap -- see
-# http://www.macosxhints.com/article.php?story=20041201032409975
-set mailcap_path=~/.mutt/mailcap-osx
-
-# Print using a2ps
-set print_command="a2ps -2gEmail"

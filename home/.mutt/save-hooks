@@ -1,6 +1,1 @@
-save-hook support@astro.*                   =itsupport
-save-hook network@physics.*                 =itsupport
-save-hook '~C PHYSLRNR'                     =lists/physlrnr
-save-hook '~C astrolrner'                   =lists/astrolrner
-save-hook '~C seminars@astro.*'				=talks
-save-hook .*            					=archive
+save-hook .* =archive

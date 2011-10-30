@@ -1,2 +1,4 @@
 bcache/*
 hcache/*
+notmuch-cache/*
+mailboxes

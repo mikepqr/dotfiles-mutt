@@ -1,0 +1,7 @@
+set folder=~/.mail/mpe
+set spoolfile=+INBOX
+set record=+sent
+set postponed=+drafts
+set smtp_url="smtp://williams@ssmtp.mpe.mpg.de:465"
+set mail_check=5
+unset mail_check_recent

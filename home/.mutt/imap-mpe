@@ -1,0 +1,7 @@
+set spoolfile=imaps://imaps.mpe.mpg.de/INBOX
+set folder=imaps://imaps.mpe.mpg.de
+set postponed=+drafts
+set record=+sent
+set imap_user="williams"
+set mail_check=180
+set timeout=60

@@ -1,9 +1,9 @@
 # Don't save emails to lists I subscribe to
-fcc-hook ~u                     =lists/outgoing
+fcc-hook ~u                     =lists.outgoing
 
 # Don't save emails only to me or my alternates
 fcc-hook ^~p                    /dev/null
 fcc-hook mike+.*@pentangle\.net /dev/null
 
 # Everying else
-fcc-hook .*			=Sent\ Items
+fcc-hook .*			<

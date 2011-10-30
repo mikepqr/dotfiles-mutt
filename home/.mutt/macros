@@ -1,3 +1,12 @@
 macro index "\Cb"    "<pipe-message>urlview<enter>"
 macro pager "\Cb"    "<pipe-message>urlview<enter>"
 macro compose y <ispell><send-message> "spell-check and send"
+
+macro index "\Cs" \
+     "<enter-command>unset wait_key<enter><shell-escape>~/usr/bin/mutt-notmuch --prompt search<enter><change-folder-readonly>~/.mutt/notmuch-cache/mutt_results<enter>" \
+                 "search mail (using notmuch)"
+macro index "\Ct" \
+     "<enter-command>unset wait_key<enter><pipe-message>~/usr/bin/mutt-notmuch thread<enter><change-folder-readonly>~/.mutt/notmuch-cache/mutt_results<enter><enter-command>set wait_key<enter>" \
+                 "search and reconstruct owning thread (using notmuch)"
+
+macro index "\Co" "<enter-command>unset wait_key<enter><shell-escape>offlineimap<enter>"
