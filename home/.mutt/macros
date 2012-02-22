@@ -9,4 +9,4 @@ macro index "\Ct" \
      "<enter-command>unset wait_key<enter><pipe-message>~/usr/bin/mutt-notmuch thread<enter><change-folder-readonly>~/.mutt/notmuch-cache/mutt_results<enter><enter-command>set wait_key<enter>" \
                  "search and reconstruct owning thread (using notmuch)"
 
-macro index "\Co" "<enter-command>unset wait_key<enter><shell-escape>offlineimap<enter>"
+macro index "\co" "<enter-command>unset wait_key<enter><shell-escape>offlineimap<enter>"
