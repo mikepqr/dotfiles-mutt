@@ -15,8 +15,8 @@ set alias_file=~/.private/.mutt_aliases
 source ~/.mutt/fcc-hooks
 source ~/.mutt/save-hooks
 source ~/.mutt/macros
-#source ~/.mutt/mutt-colors-solarized-dark-16.muttrc
-source ~/.mutt/colors
+source ~/.mutt/mutt-colors-solarized-dark-16.muttrc
+#source ~/.mutt/colors
 source ~/.mutt/crypto
 
 unset confirmappend
