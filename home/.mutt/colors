@@ -6,10 +6,10 @@ color message       cyan            default
 color markers       red             white           
 color attachment    white           default         
 color search        brightmagenta   default         
-#color status        J_black         J_status        
-color status        brightyellow    black           
-color indicator     black     yellow          
-color tree          yellow          default                                     # arrow in threads
+color status        brightwhite     default
+
+color indicator     black           white
+color tree          red             default                                     # arrow in threads
 
 # basic monocolor screen
 mono  bold          bold
@@ -19,6 +19,9 @@ mono  error         bold
 
 # index ----------------------------------------------------------------
 
+color index         brightwhite            default         "~N"                        # new messages
+color index         green            default         "~p!~F"                     # messages to me
+color index         brightgreen            default         "~N~p!~F"                   # new messages to me
 
 # message headers ------------------------------------------------------
 
@@ -30,10 +33,10 @@ color header        green     default         "^(Subject)"
 # body -----------------------------------------------------------------
 
 color quoted        cyan    default         
-# color quoted1       white            default         
-# color quoted2       yellow          default         
-# color quoted3       red             default         
-# color quoted4       brightred       default         
+color quoted1       white            default         
+color quoted2       yellow          default         
+color quoted3       red             default         
+color quoted4       brightred       default         
 
 color signature     brightgreen     default         
 color normal        default         default         
