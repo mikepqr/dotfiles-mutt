@@ -1,6 +1,9 @@
-source ~/.mutt/local-mpe
+#source ~/.mutt/local-mpe
 #source ~/.mutt/imap-mpe
+#source ~/.mutt/imap-columbia
 #source ~/.mutt/imap-physics
+source ~/.mutt/imap-pentangle
+
 set realname="Michael Williams"
 set from="williams@mpe.mpg.de
 set hostname="mpe.mpg.de"

@@ -1,8 +1,7 @@
-set spoolfile=imaps://s16889.gridserver.com/INBOX
-set folder=imaps://s16889.gridserver.com/INBOX.
-set postponed=imaps://s16889.gridserver.com/=.Drafts
-set record=imaps://s16889.gridserver.com/=.Sent
+set spoolfile=imaps://mail.pentangle.net/INBOX
+set folder=imaps://mail.pentangle.net/INBOX.
+set postponed=imaps://mail.pentangle.net/=.Drafts
+set record=imaps://mail.pentangle.net/=.Sent
 set imap_user=mike@pentangle.net
 set mail_check=60
 set timeout=15
-
