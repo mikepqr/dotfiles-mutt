@@ -1,0 +1,7 @@
+set spoolfile=imaps://mail.astro.columbia.edu/INBOX
+set folder=imaps://mail.astro.columbia.edu
+set postponed=+drafts
+set record=+sent
+set imap_user="williams"
+set mail_check=180
+set timeout=60
